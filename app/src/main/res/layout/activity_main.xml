@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fragments_communications_hw.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <fragment
+        android:id="@+id/fragment_buttons"
+        android:name="com.example.fragments_communications_hw.ButtonsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        tools:layout="@layout/buttons_fragment" />
+
+    <fragment
+        android:id="@+id/fragment_recycler_view"
+        android:name="com.example.fragments_communications_hw.RecyclerViewFragment"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/recycler_view_fragment" />
+
+
+</LinearLayout>
